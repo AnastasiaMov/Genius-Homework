@@ -1,96 +1,176 @@
+@font-face {
+  font-display: swap;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/roboto-v47-latin-regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/roboto-v47-latin-600.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Play";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/play-v19-latin-regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Play";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/play-v19-latin-700.woff2") format("woff2");
+}
+
 :root {
-  --color-primary-dark: #4a4a4a;
-  --color-primary-light: #ffffff;
+  --color-primary-white: #ffffff;
+  --color-primary-dark: #011c44;
+  --color-primary-blue: #2b7fff;
+  --color-secondary-gray: #4a4a4a;
+  --color-secondary-light-gray: #747272;
+  --color-secondary-navy: #011f4a;
+  --color-secondary-yellow: #ffd02b;
   --color-secondary-dark: #000000;
-  --color-brand-dark: #011c44;
-  --color-brand-light: #2b7fff;
 }
 /*Base*/
-
-body {
-  background-color: var(--color-primary-light);
-  ul {
-    list-style-type: none;
-  }
+h1 {
+  font-family: "Play", sans-serif;
 }
-/*Button*/
-.button {
-  color: var(--color-primary-light);
-  background-color: var(--color-brand-light);
-  border: 2px solid var(--color-brand-light);
-  border-radius: 32px;
-  cursor: pointer;
-  width: 219px;
-  height: 53px;
-  top: 20px;
-  left: 20px;
-  gap: 10px;
-  padding-top: 16px;
-  padding-right: 32px;
-  padding-bottom: 16px;
-  padding-left: 32px;
-  font-size: 18px;
-}
-.button:hover {
-  color: var(--color-brand-light);
-  background-color: transparent;
-  text-decoration-color: #011c44;
-}
-.button:active {
-  color: var(--color-brand-dark);
-  background-color: transparent;
-  border: 2px solid var(--color-brand-light);
-  border-radius: 32px;
-  font-size: 18px;
-}
-/*Hero-section*/
-.hero-title {
-  color: var(--color-brand-light);
-  width: 529px;
-  height: 228px;
-  font-family: Play;
-  font-weight: 700;
-  font-size: 140px;
-  line-height: 114px;
-  letter-spacing: 0%;
-}
-/*About us section*/
-.about-us-section .section-title {
-  color: var(--color-brand-dark);
-  font-family: Play;
+h2 {
+  color: var(--color-primary-dark);
+  font-family: "Play", sans-serif;
   font-weight: 700;
   font-size: 64px;
-  line-height: 100%;
-  letter-spacing: 0%;
+  line-height: 2.3;
+}
+.section-title .accent {
+  color: var(--color-primary-blue);
+}
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  background-color: var(--color-primary-white);
+  text-decoration: none;
+}
+/*Link*/
+ul {
+  list-style-type: none;
+}
+.header-link {
+  text-decoration: none;
+  color: var(--color-primary-dark);
+  line-height: 1.2;
+}
+.header-link:active {
+  color: var(--color-primary-blue);
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 1.2;
+}
+
+.footer-link {
+  text-decoration: none;
+  font-style: normal;
+  color: var(--color-primary-white);
+  font-size: 16px;
+  line-height: 1.2;
+}
+.footer-link:active {
+  color: var(--color-primary-blue);
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 1.2;
+}
+
+/*Button*/
+.button {
+  width: 219px;
+  height: 60px;
+  color: var(--color-primary-white);
+  background-color: var(--color-primary-blue);
+  border: 2px solid var(--color-primary-white);
+  border-radius: 32px;
+  cursor: pointer;
+  font-weight: 600;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.button:active {
+  line-height: 1.2;
+  color: var(--color-primary-dark);
+  background-color: transparent;
+  border: 2px solid var(--color-primary-blue);
+  text-decoration-color: #011c44;
+}
+.button-text {
+  color: var(--color-secondary-gray);
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+/*Hero-section*/
+.hero-title {
+  color: var(--color-primary-blue);
+  width: 529px;
+  height: 228px;
+  font-weight: 700;
+  font-size: 140px;
+  line-height: 1.2;
+}
+.hero-text {
+  color: var(--color-primary-dark);
+}
+
+/*About us section*/
+.about-us-section .section-title {
+  text-align: left;
+}
+.about-us-section .text {
+  color: var(--color-primary-dark);
+  font-size: 22px;
+  line-height: 1.7;
+}
+/*.about-us-accent {
 }
 /*Advantages section*/
 .advantages-section .section-title {
-  color: var(--color-brand-dark);
-  font-family: Play;
-  font-weight: 700;
-  font-size: 64px;
-  line-height: 100%;
-  letter-spacing: 0%;
+  text-align: center;
+}
+.advantages-text {
+  color: var(--color-secondary-dark);
+}
+/*Procedures section*/
+.procedures-section .section-title {
   text-align: center;
 }
 /*Procedures section*/
 .procedures-section .section-title {
-  color: var(--color-brand-dark);
-  font-family: Play;
-  font-weight: 700;
-  font-size: 64px;
-  line-height: 100%;
-  letter-spacing: 0%;
   text-align: center;
 }
-/*Procedures section*/
-.procedures-section .section-title {
-  color: var(--color-brand-dark);
-  font-family: Play;
-  font-weight: 700;
-  font-size: 64px;
-  line-height: 100%;
-  letter-spacing: 0%;
-  text-align: center;
-  vertical-align: middle;
+/*Footer*/
+.footer {
+  background-color: var(--color-primary-dark);
 }
+.copyright {
+  color: var(--color-primary-white);
+  font-size: 16px;
+  line-height: 1.2;
+  text-decoration: none;
+  font-style: normal;
+}
+.data {
+  color: var(--color-secondary-light-gray);
+  font-size: 13px;
+  font-style: normal;
+}
+
