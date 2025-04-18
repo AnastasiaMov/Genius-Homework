@@ -103,6 +103,7 @@ ul {
   font-weight: 600;
   line-height: 1.2;
   text-align: center;
+  font-family: "Roboto", sans-serif;
 }
 
 .button:active {
