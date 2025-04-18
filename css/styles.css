@@ -108,12 +108,14 @@ ul {
 .button:active {
   line-height: 1.2;
   color: var(--color-primary-dark);
+  font-family: "Roboto", sans-serif;
   background-color: transparent;
   border: 2px solid var(--color-primary-blue);
   text-decoration-color: #011c44;
 }
 .button-text {
   color: var(--color-secondary-gray);
+  font-family: "Roboto", sans-serif;
   font-size: 12px;
   line-height: 1.5;
 }
